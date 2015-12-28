@@ -1,0 +1,11 @@
+$include /etc/inputrc
+
+# Enable re-read-init-file
+"\C-x\C-r": re-read-init-file
+
+# M-C-o: capture output of line (enclose line in "$(...)")
+"\e\C-o": "\C-e)\C-a$("
+
+# M-C-l: loop over result of line (enclose line in "for x in ...; do : ; done")
+"\e\C-l": "\C-e; do : ; done\C-afor x in \e4\C-b"
+

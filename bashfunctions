@@ -1,0 +1,55 @@
+function ls()
+{
+    ls --color=auto "$@"
+}
+
+function ll()
+{
+    ls -lh "$@"
+}
+
+function grep()
+{
+    grep --color=auto "$@"
+}
+
+function egrep()
+{
+    egrep --color=auto "$@"
+}
+
+function fgrep()
+{
+    fgrep --color=auto "$@"
+}
+
+function d()
+{
+    cd "$@" && ll
+}
+
+function u
+{
+    d ..
+}
+
+function uu
+{
+    d ../..
+}
+
+function uuu
+{
+    d ../../..
+}
+
+function uuuu
+{
+    d ../../../..
+}
+
+function g
+{
+    git "$@"
+}
+
