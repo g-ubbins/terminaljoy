@@ -1,6 +1,6 @@
 function ls()
 {
-    ls --color=auto "$@"
+    command ls --color=auto "$@"
 }
 
 function ll()
@@ -10,22 +10,22 @@ function ll()
 
 function grep()
 {
-    grep --color=auto "$@"
+    command grep --color=auto "$@"
 }
 
 function egrep()
 {
-    egrep --color=auto "$@"
+    command egrep --color=auto "$@"
 }
 
 function fgrep()
 {
-    fgrep --color=auto "$@"
+    command fgrep --color=auto "$@"
 }
 
 function d()
 {
-    cd "$@" && ll
+    builtin cd "$@" && ll
 }
 
 function u
@@ -50,6 +50,7 @@ function uuuu
 
 function g
 {
-    git "$@"
+    command git "$@"
 }
 
+. ~/.bashfunctions.local

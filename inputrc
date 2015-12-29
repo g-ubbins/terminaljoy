@@ -9,3 +9,10 @@ $include /etc/inputrc
 # M-C-l: loop over result of line (enclose line in "for x in ...; do : ; done")
 "\e\C-l": "\C-e; do : ; done\C-afor x in \e4\C-b"
 
+# M-semicolon: skip forward to just after the next semi-colon
+"\e;": "\C-];\C-f"
+
+# M-colon: skip forward to just after the next colon
+"\e:": "\C-]:\C-f"
+
+$include ~/.inputrc.local
