@@ -1,7 +1,14 @@
-function ls()
-{
-    command ls --color=auto "$@"
-}
+if [[ $(uname -s) == "Linux" ]]; then
+    function ls()
+    {
+        command ls --color=auto "$@"
+    }
+elif [[ $(uname -s) == "Darwin" ]]; then
+    function ls()
+    {
+        command ls -G "$@"
+    }
+fi
 
 function ll()
 {
