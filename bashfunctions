@@ -60,4 +60,9 @@ function g
     command git "$@"
 }
 
+function vi
+{
+    command vim "$@"
+}
+
 . ~/.bashfunctions.local
