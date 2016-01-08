@@ -3,6 +3,9 @@ $include /etc/inputrc
 # Enable re-read-init-file
 "\C-x\C-r": re-read-init-file
 
+# Delete to prev slash
+"\e\C-w": unix-filename-rubout
+
 # M-C-o: capture output of line (enclose line in "$(...)")
 "\e\C-o": "\C-e)\C-a$("
 
